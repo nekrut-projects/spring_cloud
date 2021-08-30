@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: hystrix_eureka_client
+server:
+  port: 8080
+  servlet:
+    context-path: /spring_cloud
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl.defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+
