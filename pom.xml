@@ -5,10 +5,10 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module></module>
-		<module>eureka_service</module>
-		<module>products_storage</module>
-		<module>hystrix_client</module>
+		<module>eureka-service</module>
+		<module>product-service</module>
+		<module>gateway-service</module>
+		<module>front-service</module>
 	</modules>
 
 	<parent>
@@ -29,8 +29,12 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-web</artifactId>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
